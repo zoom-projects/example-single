@@ -1,0 +1,16 @@
+package com.hb0730.zoom.modules.message.convert;
+
+import com.hb0730.zoom.base.mapstruct.BizMapstruct;
+import com.hb0730.zoom.modules.message.model.entity.SysMessageTemplate;
+import com.hb0730.zoom.modules.message.model.request.SysMessageTemplateCreateRequest;
+import com.hb0730.zoom.modules.message.model.request.SysMessageTemplateUpdateRequest;
+import com.hb0730.zoom.modules.message.model.vo.SysMessageTemplateVO;
+
+/**
+ * @author <a href="mailto:huangbing0730@gmail">hb0730</a>
+ * @date 2024/10/16
+ */
+@org.mapstruct.Mapper(componentModel = "spring", unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE)
+public interface SysMessageTemplateConvert extends BizMapstruct<SysMessageTemplateVO, SysMessageTemplate,
+        SysMessageTemplateCreateRequest, SysMessageTemplateUpdateRequest> {
+}
